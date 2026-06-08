@@ -1,4 +1,4 @@
-# ConvolutionalNeuralNetwork-PureMath
+# Convolutional Neural Network Puremath
 Neural network from scratch using cupy with experiments on a ton of things, including my own optimizer and activation function. This is part 3 of the puremath notebooks where I develop AI models using math libraries only in python, in this specific notebook I didnt use autograd but differentiated each equation by hand and use that for backpropagation.
 
 The data being used is of dog images of 10 different breeds, its a regular multiclass classifcation problem.
@@ -16,8 +16,6 @@ In many places of the notebook, I have written down some ideas of mine which I w
 I have not yet completed the custom optimizer, as my mathematical knowledge does not stretch that far but I will make it and optimize it in the next notebooks, right now it uses Rayleigh Quotient to estimate the eigenvalues (curvature) and causes a unidirectional descent into gradients but utilizing Lanczos iteration and Krylov subspaces may resolve this issue, its an idea I will look into.
 
 (also on an undocumented run of the notebook, `trained_model_12` and `trained_model_13` both evaluated to give a score of 5 out of 9)
-
----
 
 ## Features of the notebook:
 - Full neural network implementation in cupy only
@@ -55,8 +53,6 @@ I have not yet completed the custom optimizer, as my mathematical knowledge does
 
 Most of the math that goes into these topics are discussed in the notebook itself.
 
----
-
 ## Experiments performed and the best model:
 
 | Model    | Convolution Type       | SE Blocks | Activation Function    | Optimizer                              | LR Schedule      | Label Smoothing | Augmentation | MixUp | Epochs | Evaluation |
@@ -77,8 +73,6 @@ Most of the math that goes into these topics are discussed in the notebook itsel
 
 Hence the best model out of all of them is model 11 followed by model 12, 13, 10
 
----
-
 ## Future improvements:
 - Implementing the ideas written in the notebook
 - Fixing the `CurveAndGradientBasedOptimizer` so that its no longer unidirectional
@@ -87,11 +81,8 @@ Hence the best model out of all of them is model 11 followed by model 12, 13, 10
 - using a parametric `ownAF`
 - implementing super-expressive activation function (EUAF and PEUAF, No idea how it would affect the result)
 - Tuning the hyperparameters a bit
-  
----
 
 ## Final Note:
 This project is part of an ongoing learning journey in machine learning and mathematical AI foundations. The focus is on understanding, experimentation, andimprovement rather than achieving state-of-the-art performance.
-
 
 
