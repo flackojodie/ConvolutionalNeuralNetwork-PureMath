@@ -68,7 +68,7 @@ Most of the math that goes into these topics are discussed in the notebook itsel
 | Model 9  | im2col All-Strided Conv| Yes        | Parametric Swish       | AdamW + Nesterov                       | None             | No              | Yes          | No    | 1      |      2      |
 | Model 10 | im2col All-Strided Conv| Yes        | PReLU                  | AdamW + Nesterov                       | Cosine Annealing | Yes             | Yes          | No    | 10      |      5      |
 | Model 11 | im2col All-Strided Conv| Yes        | PReLU                  | AdamW + Nesterov                       | Cosine Annealing | Yes             | Yes          | Yes   | 10      |     6       |
-| Model 12 | im2col All-Strided Conv| Yes        | ReLU               | AdamW + CurveAndGradientBasedOptimizer       | None             | No              | Yes           | Yes   | 5      |       5     |
+| Model 12 | im2col All-Strided Conv| Yes        | ReLU               | AdamW + CurveAndGradientBasedOptimizer       | None             | Yes              | Yes           | Yes   | 5      |       5     |
 | Model 13 | im2col All-Strided Conv| Yes        | OwnAF                  | AdamW + Nesterov + CurveAndGradientBasedOptimizer | None             | Yes             | Yes           | Yes   | 5      |      5      |
 
 Hence the best model out of all of them is model 11 followed by model 12, 13, 10
